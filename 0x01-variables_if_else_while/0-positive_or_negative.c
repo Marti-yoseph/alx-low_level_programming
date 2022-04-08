@@ -29,6 +29,6 @@ else
 printf("%i is postive\n", n);
 }
 
-return (0)
+return (0);
 
 }
