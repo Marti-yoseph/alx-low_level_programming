@@ -3,24 +3,25 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints a random number and states whether
+ *         it is postive, negative, or zero.
  *
- * Return: Always 0 (Successs/correct)
+ *Return: Always 0.
  */
 int main(void)
+{
 int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-if (n==0)
-{ 
-printf("%i is zero\n", n);
-}
-else if (n<0)
-{printf("%i is negative\n", n);
-} 
+if (n > 1)
+printf("%d is postive\n", n);
+else if (n < 0)
+printf("%d is negative\n", n);
+else
 
-return (0); 
+printf("%d is zero\n", n);
 
+return (0);
 }
