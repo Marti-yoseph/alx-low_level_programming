@@ -1,29 +1,89 @@
+#include <time.h>
+
 #include <stdio.h>
 
+​
+
+/* betty style doc for function main goes there */
+
 /**
+
  * main - Entry point
- * Return:0
+
+ *
+
+ * Return: Always 0 (Success)
+
  */
+
 int main(void)
+
 {
-int digit1, digit2;
 
-for (digit1 = 0; digit1 < 9; digit1++)
-{
-for (digit2 = digit1 + 1; digit2 < 10; digit2++)
-{
-putchar((digit1 % 10) + '0');
-putchar((digit2 % 10) + '0');
+	int i;
 
-if (digit == 8 && digit2 == 9)
-continue;
+	int j;
 
-putchar(',');
-putchar(' ');
-}
-}
+​
 
-putchar('\n');
+	i = 48;
 
-return (0);
+	j = 49;
+
+	while  ((i < 57) && (j < 58))
+
+	{
+
+		putchar(i);
+
+		putchar(j);
+
+		if ((i == 56) && (j == 57))
+
+		{
+
+			putchar('\n');
+
+			i++;
+
+			j++;
+
+		}
+
+		else
+
+		{
+
+			putchar(44);
+
+			putchar(32);
+
+			if (j < 57)
+
+			{
+
+				j++;
+
+			}
+
+			else
+
+			{
+
+				i++;
+
+				j = 1 + i;
+
+			}
+
+		}
+
+​
+
+	}
+
+​
+
+	return (0);
+
 }
