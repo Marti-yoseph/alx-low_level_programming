@@ -39,8 +39,8 @@ putchar(44);
 putchar(32);
 if (k < 57)
 {
-
 k++;
+
 }
 else if ((j < 56) && (k == 57))
 {
@@ -51,12 +51,8 @@ else
 
 j = 1 + ++i;
 k = 1 + j;
-
 }
-
 }
-
 }
 return (0);
-
 }
