@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 
-​
 
 /* betty style doc for function main goes there */
 
@@ -24,7 +23,7 @@ int main(void)
 
 	int j;
 
-​
+
 
 	i = 48;
 
@@ -78,11 +77,10 @@ int main(void)
 
 		}
 
-​
+
 
 	}
 
-​
 
 	return (0);
 
