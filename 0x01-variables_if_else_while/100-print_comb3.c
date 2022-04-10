@@ -1,9 +1,6 @@
 #include <time.h>
 #include <stdio.h>
 
-
-/* betty style doc for function main goes there */
-
 /**
 
  * main - Entry point
@@ -70,12 +67,6 @@ i++;
 j = 1 + i;
 
 }
-
-}
-
-
-}
-
 return (0);
 
 }
