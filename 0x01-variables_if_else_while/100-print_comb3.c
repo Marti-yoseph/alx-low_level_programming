@@ -4,9 +4,7 @@
 /**
 
  * main - Entry point
-
- *Return: Always 0 (Success)
-
+ * Return:0 
  */
 
 int main(void)
@@ -27,7 +25,6 @@ while  ((i < 57) && (j < 58))
 {
 
 putchar(i);
-
 putchar(j);
 
 if ((i == 56) && (j == 57))
