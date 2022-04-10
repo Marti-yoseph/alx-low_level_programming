@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
-* Return: Always 0 (Success)
+ * Return:0
  */
 int main(void)
 {
@@ -48,12 +48,11 @@ k = 1 + ++j;
 }
 else
 {
-
 j = 1 + ++i;
 k = 1 + j;
-}
-}
-}
 
+}
+}
+}
 return (0);
 }
