@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
-
  * main - Entry point
  * Return:0 
  */
@@ -12,7 +11,6 @@ int main(void)
 
 int i;
 int j;
-
 
 i = 48;
 j = 49;
@@ -44,13 +42,9 @@ else
 
 i++;
 j = 1 + i;
-
 }
-
 }
-
 }
 
 return (0);
-
 }
