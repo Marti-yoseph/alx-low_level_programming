@@ -6,49 +6,29 @@
  */
 int main(void)
 {
-int i;
-int j;
-int k;
+int c, i, k;
 
-i = 48;
-j = 49;
-k = 50;
-while  ((i < 56) && (j < 57) && (k < 58))
+for (c = '0'; c <= '9'; c++)
 {
-
+for (i = '0'; k <= '9'; i++)
+{
+for (k = '0'; k <= '9'; k++)
+{
+if (c < i && i < k)
+{
+putchar(c);
 putchar(i);
-putchar(j);
 putchar(k);
-if ((i == 55) && (j == 56) && (k == 57))
-{
 
+if (c != '7')
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+}
 putchar('\n');
-i++;
-j++;
-k++;
-
-}
-else
-{
-
-putchar(44);
-putchar(32);
-if (k < 57)
-{
-k++;
-
-}
-else if ((j < 56) && (k == 57))
-{
-k = 1 + ++j;
-
-}
-else
-{
-j = 1 + ++i;
-k = 1 + j;
-}
-}
-}
 return (0);
 }
