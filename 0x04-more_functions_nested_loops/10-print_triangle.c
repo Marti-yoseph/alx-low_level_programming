@@ -2,12 +2,12 @@
 
 /**
  * print_triangle - prints a triangle
- * @size: limit
+ * @size: sets the size of the triangle
  *
  * Return: nothing
  */
 
-void print_triangles(int size)
+void print_triangle(int size)
 {
 int i, j;
 
@@ -17,8 +17,8 @@ for (i = size; i > 0; i--)
 for (j = 1; j <= size; j++)
 if (j >= i)
 _putchar('#');
-_putchar(' ');
 else
+_putchar(' ');
 _putchar('\n');
 }
 else
