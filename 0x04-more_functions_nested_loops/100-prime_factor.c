@@ -2,40 +2,51 @@
 
 /**
 
-  * main - entry block 
+ * main - Finds and prints the largest prime
 
-  * @void: no argument 
+ *        factor of the number 612852475143.
 
-  * Return: 0 
+ *
 
-  */ 
+ * Return: Always 0.
 
-int main(void) 
+ */
 
-{ 
+int main(void)
 
-long i, number = 612852475143; 
+{
+
+	long prime = 612852475143, div;
 
 
+	while (div < (prime / 2))
 
-for (i  = 2; i <= number; i++) 
+	{
 
-{ 
+		if ((prime % 2) == 0)
 
-if (number % i == 0) 
+		{
 
-{ 
+			prime /= 2;
 
-number = number / i; 
+			continue;
 
-i--; 
+		}
 
-} 
+		for (div = 3; div < (prime / 2); div += 2)
 
-} 
+		{
 
-printf("%lu\n", i); 
+			if ((prime % div) == 0)
 
-return (0); 
+				prime /= div;
 
-} 
+		}
+
+	}
+
+	printf("%ld\n", prime);
+
+	return (0);
+
+}
