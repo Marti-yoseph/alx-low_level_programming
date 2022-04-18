@@ -7,7 +7,6 @@
  * 01 and 10 are considered the same combination of the two digits 0 and 1
  * Return: 0
  */
-
 int main(void)
 {
 int n1 = 48;
