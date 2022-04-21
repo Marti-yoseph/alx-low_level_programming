@@ -1,4 +1,5 @@
 include "main.h"
+
 /**
  * *_strcat - concatenates two strings
  * @dest: second string to be concatenated to src
