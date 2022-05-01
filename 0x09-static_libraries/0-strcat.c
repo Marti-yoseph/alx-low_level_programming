@@ -1,25 +1,27 @@
 #include "main.h"
-
 /**
- * _strcat - function that concatenates two strings
+ * _strcat - function that concatenates
+ *          two strings.
  *
- * @dest: char pointer variable
- * @src: char pointer variable
+ * @dest: pointer to destnation input
+ * @src: pointer to source input
  *
- * Return: a pointer to the resulting string dest
- */
+ * Return: pointer to resulting string @dest
+*/
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int c, c2;
 
-	for (i = 0; dest[i] != '\0'; i++)
-		;
-	for (j = 0; src[j] != '\0'; j++)
+	c = 0;
+	/*find the size of dest array*/
+	while (dest[c])
+		c++;
 
-		dest[i + j] = src[j];
-
-	dest[i + j] = '\0';
+	/* iterate through each src array value without the null byte*/
+	for (c2 = 0; src[c2] ; c2++)
+		/*append src[c2] to dest[c] while overwritting the null byte in dest*/
+		dest[c++] = src[c2];
 
 	return (dest);
 }
