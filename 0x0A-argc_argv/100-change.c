@@ -3,10 +3,8 @@
 
 /**
  * main - prints the minimum number of coins
- *
  * @argc: olds the number of arguments passed
  * @argv: array pointer that holds the arguments passed
- *
  * Return: 0
  */
 
