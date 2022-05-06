@@ -1,10 +1,10 @@
+#include "main.h"
+
 /**
- * _isdigit - checks if input is digit between 0 - 9
- *
- * @c: input
- *
- * Return: 1 if is digit, 0 if not
-*/
+ * _isdigit - function that checks for a digit (0 through 9).
+ * @c: int type number.
+ * Return: 1 if c is a digit, 0 otherwise
+ */
 
 int _isdigit(int c)
 {
